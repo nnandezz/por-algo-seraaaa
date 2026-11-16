@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>POR ALGO SERÁ</title>
+
+    <link rel="icon" href="./favicon.png" type="image/png">
+    <link rel="shortcut icon" href="./favicon.png" type="image/png">
+
+    <link rel="manifest" href="manifest.json">
+
+    <meta name="theme-color" content="#05070C">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <video id="background-video" autoplay muted loop playsinline>
+        <source src="./nocheestrellada.mp4" type="video/mp4">
+    </video>
+
+    <div id="background-overlay"></div>
+
+    <header id="header">
+
+        <h1>POR ALGO SERÁ</h1>
+
+        <nav id="navigation">
+
+            <a href="index.html">INICIO</a>
+            <a href="recuerdos.html">RECUERDOS</a>
+            <a href="historia.html">HISTORIA</a>
+            <a href="tiempo.html">TIEMPO</a>
+
+        </nav>
+
+    </header>
+
+    <div id="welcome-popup">
+
+        <div class="popup">
+
+            <h1>¡Feliz Navidad, Rosa!</h1>
+
+            <p>
+                Esta Navidad quería regalarte algo hecho especialmente para ti: un pequeño rincón donde guardar un montón de cosas que me recuerdan a nosotros y a todo lo bonito que compartimos.
+            </p>
+
+                        <p>
+                Antes de empezar, quiero darte las gracias por estar en mi vida.
+                Cada detalle de esta página está hecho con muchísimo cariño y pensando únicamente en ti.
+            </p>
+
+            <button id="enter-button">
+                Entrar
+            </button>
+
+        </div>
+
+    </div>
+
+    <div id="love-loading">
+
+        <span>Cargando todo mi amor...</span>
+
+        <div class="loading-progress"></div>
+
+    </div>
+
+    <main>
+
+        <section id="inicio">
+
+            <div class="home-content">
+
+                <h2>INICIO</h2>
+
+                                <p>
+                    Quería reunir en un mismo lugar algunos recuerdos y detalles de nuestra historia.
+                    Si alguna vez necesitas una sonrisa o recordar cuánto te quiero,
+                    aquí tendrás un pequeño rincón al que volver.
+                </p>
+
+                                <p>
+                    Aquí encontrarás canciones, historias y otras pequeñas cosas
+                    que me hacen pensar en ti y en lo especial que eres para mí.
+                </p>
+
+                                <p>
+                    Espero que te guste. He preparado todo esto con mucho amor,
+                    porque quería regalarte algo único y hecho por mí.
+                    Ojalá cada parte te recuerde lo mucho que te quiero.
+                </p>
+
+                                <p>
+                    Y por cierto, cada vez que vuelvas a este rincón nuestro,
+                    el contador de abajo sumará una visita.
+                </p>
+
+                <div id="love-counter">
+
+                    <h3>Veces que has vuelto a nuestro rincón</h3>
+
+                    <p>
+                        <span id="visit-count">0</span>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+
+        <p>
+            © 2026 Nandez. Todos los derechos reservados.
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script>
+
+        if("serviceWorker" in navigator){
+
+            window.addEventListener("load",()=>{
+
+                navigator.serviceWorker.register("./service-worker.js");
+
+            });
+
+        }
+
+    </script>
+
+</body>
+
+</html>
